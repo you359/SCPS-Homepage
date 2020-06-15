@@ -1434,6 +1434,10 @@ form input[type="submit"], form button, form input[type="reset"] {
   padding-bottom: 30px;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .sub-section-title {
   font-size: 10px;
   font-size: 1.5em;
@@ -1827,8 +1831,12 @@ figure img {
 .arrow-list.has-border li:last-child {
   border-bottom: none; }
 
-.arrow-list.small-bottom-margin {
+.small-bottom-margin {
   margin-bottom: 0px;
+}
+
+.small-bottom-padding {
+  padding-bottom: 0px;
 }
 
 .ordered-list {

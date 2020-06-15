@@ -28,7 +28,7 @@
     -moz-box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
     box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
 
-    z-index: -2;
+    z-index: 1;
 }
 .award {
     text-align: center;
@@ -49,11 +49,13 @@
     filter: blur(5px);
     left: 50%;
     transform: translate(-50%, 0%);
-    z-index: -1;
+    z-index: 2;
 }
 
 .award img{
+    position: relative;
     width: 40%;
+    z-index: 3;
 }
 
 .award-title {
@@ -90,6 +92,32 @@
     -ms-transform: rotate(-35deg);
     -o-transform: rotate(-35deg);
 }
+.bookend_left.bg-color {
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: -18px;
+    width: 36px;
+    height: 36px;
+    background-color: #edf2f4;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+.bookend_left.bg-color:before {
+    position: absolute;
+    top: 31px;
+    left: 17px;
+    width: 20px;
+    height: 10px;
+    background-color: #edf2f4;
+    content: "";
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
 .bookend_right {
     display: block;
     position: absolute;
@@ -103,6 +131,19 @@
     -ms-transform: rotate(-35deg);
     -o-transform: rotate(-35deg);
 }
+.bookend_right.bg-color {
+    display: block;
+    position: absolute;
+    right: -25px;
+    top: -18px;
+    width: 36px;
+    height: 36px;
+    background-color: #edf2f4;
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
 .bookend_right:before {
     position: absolute;
     top: 31px;
@@ -110,6 +151,19 @@
     width: 20px;
     height: 10px;
     background-color: #ffffff;
+    content: "";
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+.bookend_right.bg-color:before {
+    position: absolute;
+    top: 31px;
+    right: 17px;
+    width: 20px;
+    height: 10px;
+    background-color: #edf2f4;
     content: "";
     -webkit-transform: rotate(35deg);
     -moz-transform: rotate(35deg);
